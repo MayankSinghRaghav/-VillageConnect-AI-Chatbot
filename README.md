@@ -1,31 +1,18 @@
-# VillageConnect — AI Chatbot (Final project)
+# 🌾 VillageConnect — AI Chatbot
 
-## Overview
-VillageConnect is a conversational AI that answers village-level service queries.
+VillageConnect is an **AI-powered chatbot** designed to assist rural users with **agriculture schemes, subsidies, SHG training, and village-level services**.  
+The project fine-tunes a conversational AI model (DialoGPT-small) on a custom dataset and deploys it via **CLI** and **FastAPI**.
 
-## Setup
-```
-pip install -r requirements.txt
-```
+---
 
-## Training
-```
-cd src
-python train.py
-```
+## 🚀 Features
+- 🤖 Fine-tuned conversational AI (DialoGPT-small with Hugging Face Transformers)
+- 💬 Interactive **CLI chatbot**
+- 🌐 **FastAPI REST API** for web or mobile integration
+- 📊 Evaluation with **perplexity** and basic tests
+- 🐳 Dockerfile for containerized deployment
+- ✅ Unit tests with **pytest**
 
-## Chat CLI
-```
-python src/inference.py
-```
+---
 
-## Run API
-```
-uvicorn src.app:app --reload --host 0.0.0.0 --port 8000
-```
-
-## Docker
-```
-docker build -t villageconnect .
-docker run -p 8000:8000 -v $(pwd)/models:/app/models villageconnect
-```
+## 📂 Project Structure
